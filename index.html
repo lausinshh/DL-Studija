@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DL Studija — Car Detailing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">DL <span>STUDIJA</span></a>
+  <ul class="nav-links">
+    <li><a href="#whatsapp-booking">WhatsApp</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#deep-clean">Deep Clean</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Book Now</a>
+  <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+  <p class="hero-eyebrow reveal">Est. 2023 · Professional Car Care</p>
+  <h1 class="reveal reveal-delay-1">
+    DL
+    <span class="line-gold">STUDIJA</span>
+  </h1>
+  <p class="hero-sub reveal reveal-delay-2">
+    Car Wash & <span>Detailing</span>
+  </p>
+  <div class="hero-actions reveal reveal-delay-3">
+    <a href="#services" class="btn-primary">Our Services</a>
+    <a href="#contact" class="btn-ghost">Get a Quote</a>
+  </div>
+  <div class="hero-stats reveal reveal-delay-4">
+    <div>
+      <div class="hero-stat-num">2+</div>
+      <div class="hero-stat-label">Years Experience</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">500+</div>
+      <div class="hero-stat-label">Cars Detailed</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">100%</div>
+      <div class="hero-stat-label">Client Satisfaction</div>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- QUICK BOOKING -->
+<section id="whatsapp-booking">
+  <p class="section-eyebrow reveal">Quick Booking</p>
+  <h2 class="section-title reveal reveal-delay-1">Book a<br>Slot</h2>
+  <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 32px;">
+    Pick a date and a service, choose how you'd like to reach us, and send the request in one tap.
+  </p>
+
+  <div class="booking-tabs reveal reveal-delay-1" role="tablist">
+    <button type="button" class="booking-tab active" data-mode="whatsapp" role="tab" aria-selected="true">
+      <span class="wa-icon">&#9742;</span> WhatsApp
+    </button>
+    <button type="button" class="booking-tab" data-mode="email" role="tab" aria-selected="false">
+      <span class="wa-icon">&#9993;</span> Email
+    </button>
+  </div>
+
+  <div class="wa-widget reveal reveal-delay-2">
+    <div class="form-row booking-contact-fields" hidden>
+      <div class="form-field">
+        <label for="booking-name">Name</label>
+        <input type="text" id="booking-name" placeholder="Jānis Bērziņš">
+      </div>
+      <div class="form-field">
+        <label for="booking-email">Email</label>
+        <input type="email" id="booking-email" placeholder="email@example.com">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-field">
+        <label for="wa-date">Preferred Date</label>
+        <div class="date-field">
+          <span class="date-icon" aria-hidden="true">&#128197;</span>
+          <span class="date-display" id="wa-date-display">Select date</span>
+          <input type="date" id="wa-date" class="date-icon-only">
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="wa-service">Service Type</label>
+        <select id="wa-service">
+          <option value="Basic Wash">Basic Wash</option>
+          <option value="Full Detail">Full Detail</option>
+          <option value="Paint Correction">Paint Correction</option>
+        </select>
+      </div>
+    </div>
+    <a href="#" id="booking-submit-btn" class="btn-primary wa-btn" rel="noopener">
+      <span class="wa-icon">&#9742;</span> Book on WhatsApp
+    </a>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <p class="section-eyebrow reveal">What We Offer</p>
+      <h2 class="section-title reveal reveal-delay-1">Our<br>Services</h2>
+    </div>
+    <p class="section-desc reveal reveal-delay-2">
+      From a quick exterior wash to a full interior deep clean — every job gets our full attention and professional-grade products.
+    </p>
+  </div>
+
+  <div class="services-grid">
+    <!-- Card 1 -->
+    <div class="service-card reveal">
+      <span class="service-number">01</span>
+      <span class="service-icon">🚿</span>
+      <h3 class="service-name">Exterior Wash</h3>
+      <p class="service-desc">Full hand wash of the vehicle exterior using pH-balanced foam and microfiber cloths.</p>
+      <ul class="service-includes">
+        <li>Pre-rinse & foam treatment</li>
+        <li>Wheel & tire cleaning</li>
+        <li>Hand wash & rinse</li>
+        <li>Streak-free drying</li>
+      </ul>
+      <div class="service-price-block">
+        <span class="service-price-label">Starting from</span>
+        <span class="service-price">— €</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="service-card reveal reveal-delay-1">
+      <span class="service-number">02</span>
+      <span class="service-icon">🧹</span>
+      <h3 class="service-name">Interior Vacuum</h3>
+      <p class="service-desc">Thorough vacuuming of all interior surfaces including seats, carpets, and hard-to-reach areas.</p>
+      <ul class="service-includes">
+        <li>Seat vacuuming</li>
+        <li>Removable mat cleaning</li>
+        <li>Non-removable carpet vacuum</li>
+        <li>Trunk vacuuming</li>
+      </ul>
+      <div class="service-price-block">
+        <span class="service-price-label">Starting from</span>
+        <span class="service-price">— €</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="service-card reveal reveal-delay-2">
+      <span class="service-number">03</span>
+      <span class="service-icon">✨</span>
+      <h3 class="service-name">Full Detailing</h3>
+      <p class="service-desc">Complete inside-out treatment. Every surface cleaned, conditioned, and protected.</p>
+      <ul class="service-includes">
+        <li>Full exterior wash</li>
+        <li>Complete interior vacuum</li>
+        <li>Dashboard & panel cleaning</li>
+        <li>Glass cleaning & polish</li>
+      </ul>
+      <div class="service-price-block">
+        <span class="service-price-label">Starting from</span>
+        <span class="service-price">— €</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="service-card reveal reveal-delay-3">
+      <span class="service-number">04</span>
+      <span class="service-icon">🛡️</span>
+      <h3 class="service-name">Paint Protection</h3>
+      <p class="service-desc">Ceramic coating or wax sealant applied to protect your paint from the elements.</p>
+      <ul class="service-includes">
+        <li>Surface decontamination</li>
+        <li>Paint correction prep</li>
+        <li>Ceramic / wax application</li>
+        <li>Hydrophobic finish</li>
+      </ul>
+      <div class="service-price-block">
+        <span class="service-price-label">Starting from</span>
+        <span class="service-price">— €</span>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="service-card reveal">
+      <span class="service-number">05</span>
+      <span class="service-icon">🪟</span>
+      <h3 class="service-name">Glass & Optics</h3>
+      <p class="service-desc">All-around glass cleaning, streak elimination, and optional water-repellent treatment.</p>
+      <ul class="service-includes">
+        <li>Interior glass cleaning</li>
+        <li>Exterior glass polish</li>
+        <li>Mirror cleaning</li>
+        <li>Water-repellent coat (optional)</li>
+      </ul>
+      <div class="service-price-block">
+        <span class="service-price-label">Starting from</span>
+        <span class="service-price">— €</span>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="service-card reveal reveal-delay-1">
+      <span class="service-number">06</span>
+      <span class="service-icon">🔧</span>
+      <h3 class="service-name">Engine Bay</h3>
+      <p class="service-desc">Safe degreasing and cleaning of the engine compartment for a factory-fresh look.</p>
+      <ul class="service-includes">
+        <li>Pre-treatment degreasing</li>
+        <li>Pressure-assisted rinse</li>
+        <li>Component dressing</li>
+        <li>Final inspection</li>
+      </ul>
+      <div class="service-price-block">
+        <span class="service-price-label">Starting from</span>
+        <span class="service-price">— €</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-layout">
+    <div>
+      <p class="section-eyebrow reveal">How It Works</p>
+      <h2 class="section-title reveal reveal-delay-1">Our<br>Process</h2>
+      <div class="process-steps">
+        <div class="process-step reveal reveal-delay-1">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h3>Book Your Slot</h3>
+            <p>Fill out the contact form or call us directly. We confirm your appointment within 24 hours.</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h3>Vehicle Inspection</h3>
+            <p>We assess the condition of your car and confirm the chosen service package with you.</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h3>Professional Clean</h3>
+            <p>Our team gets to work using professional-grade products and equipment.</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h3>Final Inspection</h3>
+            <p>We do a walk-around with you to make sure everything meets our standard — and yours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="process-visual reveal reveal-delay-2">
+      <span class="process-badge">Quality Guaranteed</span>
+      <div class="process-visual-title">
+        Every<br>Detail<br><span>Matters</span>
+      </div>
+      <p style="color: var(--muted); font-size: 14px; line-height: 1.7;">
+        We don't rush. Every job is finished when it's right — not just when the clock runs out. If you're not satisfied, we'll make it right.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- DEEP CLEAN BREAKDOWN -->
+<section id="deep-clean">
+  <p class="section-eyebrow reveal">What's Included</p>
+  <h2 class="section-title reveal reveal-delay-1">Deep Cleaning<br>Package</h2>
+  <p class="section-desc reveal reveal-delay-2">
+    Our deep clean service is the most thorough option — here's exactly what we cover in every deep clean booking.
+  </p>
+
+  <div class="deep-grid">
+    <div class="deep-item reveal">
+      <div class="deep-item-icon">🪑</div>
+      <span class="deep-item-text">Seat vacuuming with industrial vacuum</span>
+    </div>
+    <div class="deep-item reveal reveal-delay-1">
+      <div class="deep-item-icon">🟫</div>
+      <span class="deep-item-text">Removable mat vacuuming</span>
+    </div>
+    <div class="deep-item reveal reveal-delay-2">
+      <div class="deep-item-icon">🟩</div>
+      <span class="deep-item-text">Non-removable carpet vacuuming</span>
+    </div>
+    <div class="deep-item reveal">
+      <div class="deep-item-icon">📦</div>
+      <span class="deep-item-text">Trunk vacuuming</span>
+    </div>
+    <div class="deep-item reveal reveal-delay-1">
+      <div class="deep-item-icon">🟧</div>
+      <span class="deep-item-text">Rubber mat washing</span>
+    </div>
+    <div class="deep-item reveal reveal-delay-2">
+      <div class="deep-item-icon">⚙️</div>
+      <span class="deep-item-text">Plastic part cleaning & conditioning</span>
+    </div>
+    <div class="deep-item reveal">
+      <div class="deep-item-icon">🎛️</div>
+      <span class="deep-item-text">Detailed panel & dashboard cleaning</span>
+    </div>
+    <div class="deep-item reveal reveal-delay-1">
+      <div class="deep-item-icon">🚪</div>
+      <span class="deep-item-text">Door sill & threshold cleaning</span>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- PRICING -->
+<section id="pricing">
+  <p class="section-eyebrow reveal">Transparent Pricing</p>
+  <h2 class="section-title reveal reveal-delay-1">Price List</h2>
+  <p class="section-desc reveal reveal-delay-2">
+    Prices vary depending on vehicle size and condition. Use the form below to request an exact quote — or simply pick a tier to get started.
+  </p>
+
+  <div class="pricing-grid">
+    <!-- Basic -->
+    <div class="pricing-card reveal">
+      <div class="pricing-tier">Tier 1</div>
+      <div class="pricing-name">Basic Wash</div>
+      <div class="pricing-amount"><span class="placeholder-text">Price coming soon</span></div>
+      <div class="pricing-from">Contact us for current rates</div>
+      <ul class="pricing-list">
+        <li>Exterior hand wash</li>
+        <li>Wheel & tyre cleaning</li>
+        <li>Streak-free dry</li>
+        <li>Window clean</li>
+      </ul>
+      <a href="#contact" class="btn-ghost" style="text-align:center; display:block;">Request Quote</a>
+    </div>
+
+    <!-- Full Detail -->
+    <div class="pricing-card featured reveal reveal-delay-1">
+      <div class="pricing-tier">Tier 2</div>
+      <div class="pricing-name">Full Detail</div>
+      <div class="pricing-amount"><span class="placeholder-text">Price coming soon</span></div>
+      <div class="pricing-from">Contact us for current rates</div>
+      <ul class="pricing-list">
+        <li>Everything in Basic Wash</li>
+        <li>Full interior vacuum</li>
+        <li>Dashboard & panel clean</li>
+        <li>Rubber mat wash</li>
+        <li>Door sill cleaning</li>
+      </ul>
+      <a href="#contact" class="btn-primary" style="text-align:center; display:block;">Request Quote</a>
+    </div>
+
+    <!-- Premium -->
+    <div class="pricing-card reveal reveal-delay-2">
+      <div class="pricing-tier">Tier 3</div>
+      <div class="pricing-name">Premium Detail</div>
+      <div class="pricing-amount"><span class="placeholder-text">Price coming soon</span></div>
+      <div class="pricing-from">Contact us for current rates</div>
+      <ul class="pricing-list">
+        <li>Everything in Full Detail</li>
+        <li>Paint protection coat</li>
+        <li>Engine bay clean</li>
+        <li>Headlight restoration</li>
+        <li>Ceramic or wax finish</li>
+      </ul>
+      <a href="#contact" class="btn-ghost" style="text-align:center; display:block;">Request Quote</a>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-layout">
+    <div>
+      <p class="section-eyebrow reveal">Get In Touch</p>
+      <h2 class="section-title reveal reveal-delay-1">Book a<br>Slot</h2>
+      <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 40px;">
+        Ready to give your car the treatment it deserves? Fill out the form and we'll get back to you within 24 hours with availability and pricing.
+      </p>
+      <div class="contact-info">
+        <div class="contact-item reveal reveal-delay-2">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-value">+371 — — — — — —</div>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-3">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">Riga, Latvia</div>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-4">
+          <div class="contact-item-icon">🕐</div>
+          <div>
+            <div class="contact-item-label">Working Hours</div>
+            <div class="contact-item-value">Mon–Sat: 9:00 – 19:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal reveal-delay-2">
+      <div class="form-row">
+        <div class="form-field">
+          <label>First Name</label>
+          <input type="text" placeholder="Jānis">
+        </div>
+        <div class="form-field">
+          <label>Last Name</label>
+          <input type="text" placeholder="Bērziņš">
+        </div>
+      </div>
+      <div class="form-field">
+        <label>Phone / Email</label>
+        <input type="text" placeholder="+371 or email@example.com">
+      </div>
+      <div class="form-field">
+        <label>Service Interested In</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Exterior Wash</option>
+          <option>Interior Vacuum</option>
+          <option>Full Detailing</option>
+          <option>Deep Clean Package</option>
+          <option>Paint Protection</option>
+          <option>Engine Bay</option>
+          <option>Not sure — need advice</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label>Vehicle Type</label>
+          <select>
+            <option value="">Select...</option>
+            <option>Hatchback / Sedan</option>
+            <option>SUV / Crossover</option>
+            <option>Van / Minivan</option>
+            <option>Truck</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Preferred Date</label>
+          <input type="date">
+        </div>
+      </div>
+      <div class="form-field">
+        <label>Additional Notes</label>
+        <textarea placeholder="Any specific concerns or notes about the vehicle..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%; border:none; cursor:pointer; font-size:17px; padding: 16px 36px;">
+        Send Booking Request
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">DL <span>STUDIJA</span></div>
+  <div class="footer-copy">© 2024 DL Studija. All rights reserved.</div>
+  <div class="footer-est">Est. 2023</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
